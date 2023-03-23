@@ -5,27 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" th:href="@{/css/style.css}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <title>Loja FATEC</title>
 </head>
 <body>
-  <h1 th:text="Papelaria Fatec">Papelaria Fatec</h1>
+  <!-- Logo  -->
+  <nav class="navbar ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h1 th:text="N&C">N&C</h1>        
+      </a>
+    </div>
+  </nav>
 
-  <h3 th:text="Caderno:">Caderno:</h3>
-  <div>
-    <div>
-        <img src="../img/pexels-eva-bronzini-7967488.jpg" class="img_product">
-        <p>Nome</p>
-        <p>Descrição</p>
+  <!-- titulo pagina -->
+  <h1 class="titulo" th:text="Papelaria Fatec">Papelaria Fatec</h1>
+  
+  <div class="container  mb-5">
+       <!-- Caderno -->
+    <h3 class="mt-4" th:text="Caderno:">Caderno:</h3>
+    <div class="row mt-5">
+      <div class="col-4">
+        <img src="../img/cadernoRosa.png" class="img_product">
+        <h4 class="nomeProduto mt-4" th:text="Caderno Basic">Caderno Basic</h4>
+        <div class="preco">R$ 20,00</div>
+        <p class="descProduto">O Caderno Espiral Capa Dura Universitário 10 Matérias Brief 160 Folhas, possui capa dura com a parte interna decorada, bolsa de papel para guardar trabalhos e anotações e folhas pautadas padrão.</p>
         <input type="checkbox" name="" id="product1">
         <label for="product1"> Add carrinho</label>
+      </div>
+      <div class="col-4">
+        <img src="../img/cadernoAzulClaro.png" class="img_product">
+        <h4 class="nomeProduto mt-4">Caderno Universitário Basico</h4>
+        <div class="preco">R$ 18,00</div>
+        <p class="descProduto">Produto Sortido: O modelo e a cor podem variar de acordo com o estoque da loja escolhida. caderno universitario, fechamento em espiral, 10 matérias.</p>
+        <input type="checkbox" name="" id="product1">
+        <label for="product1"> Add carrinho</label>
+      </div>
+      <div class="col-4">
+        <img src="../img/cadernoAzulEscuro.png" class="img_product">
+        <h4 class="nomeProduto mt-4">Caderno Básico</h4>
+        <div class="preco">R$ 20,00</div>
+        <p class="descProduto">Produto Sortido: O modelo e a cor podem variar de acordo com o estoque da loja escolhida. Se você gosta de ter toda a elegância na hora de fazer as anotações do escritório ou na escola.</p>
+        <input type="checkbox" name="" id="product1">
+        <label for="product1"> Add carrinho</label>
+      </div>
     </div>
-      <div></div>
-      <div></div>
+
+    <!-- MarcaTexto -->
+    <h3 class="mt-5" th:text="Marcatexto:">Marcatexto:</h3>
+    <div class="row mt-5">
+      <div class="col-4">
+        <img src="../img/marcatextoRosa.png" class="img_productMarc">
+        <h4 class="nomeProduto mt-4">Caneta Marca Texto Rosa</h4>
+        <div class="preco">R$ 5,00</div>
+        <p class="descProduto">Com os marca texto pastel da N&C você consegue destacar todos os textos importantes.</p>
+        <input type="checkbox" name="" id="product1">
+        <label for="product1"> Add carrinho</label>
+      </div>
+      <div class="col-4">
+        <img src="../img/marcatextoAzul.png" class="img_productMarc">
+        <h4 class="nomeProduto mt-4">Caneta Marca Texto Azul</h4>
+        <div class="preco">R$ 4,00</div>
+        <p class="descProduto">Com os marca texto pastel da N&C você consegue destacar todos os textos importantes.</p>
+        <input type="checkbox" name="" id="product1">
+        <label for="product1"> Add carrinho</label>
+      </div>
+      <div class="col-4">
+        <img src="../img/marcatextoVerdeAgua.png" class="img_productMarc">
+        <h4 class="nomeProduto mt-4">Caneta Marca Texto Verde Água</h4>
+        <div class="preco">R$ 4,00</div>
+        <p class="descProduto">Com os marca texto pastel da N&C você consegue destacar todos os textos importantes.</p>
+        <input type="checkbox" name="" id="product1">
+        <label for="product1"> Add carrinho</label>
+      </div>    
+    </div>
   </div>
 
-  <h3 th:text="Marcatexto:">Marcatexto:</h3>
+    <!-- Footer -->
 
-  <h3 th:text="Estojo:">Estojo:</h3>
+    <footer>
+      <small>Feito com &#10084; por Carolina e Nicoly</small>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

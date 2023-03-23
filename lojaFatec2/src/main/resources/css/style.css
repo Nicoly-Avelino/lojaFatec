@@ -1,6 +1,45 @@
-h1{
-    color: red;
+body{
+    font-family:sans-serif;
 }
 .img_product{
     width: 200px;
 }
+.img_productMarc{
+    width: 80px;
+}
+.titulo{
+    background-color:#5990D9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.preco{
+    font-size: 16px;
+    font-weight: bold;
+}
+.nomeProduto{
+    font-size: 18px;
+    font-weight: bold;
+}
+.descProduto{
+    font-size: 14px;
+}
+footer{
+    background-color: #5990D9;
+    padding: 1%;
+    text-align: center;
+}
+
+/* Color Theme Swatches in Hex */
+/* .Pastéis-de-Catedral-1-hex { color: #F2C4D0; }
+.Pastéis-de-Catedral-2-hex { color: #F0F2A7; }
+.Pastéis-de-Catedral-3-hex { color: #F2E8B3; }
+.Pastéis-de-Catedral-4-hex { color: #F2D6BD; }
+.Pastéis-de-Catedral-5-hex { color: #F2C8C4; } */
+
+/* Color Theme Swatches in Hex */
+/* .luar-a-luz-do-dia-1-hex { color: #5990D9; }
+.luar-a-luz-do-dia-2-hex { color: #446EA6; }
+.luar-a-luz-do-dia-3-hex { color: #37648C; }
+.luar-a-luz-do-dia-4-hex { color: #4E8BBF; }
+.luar-a-luz-do-dia-5-hex { color: #B6D6F2; } */
